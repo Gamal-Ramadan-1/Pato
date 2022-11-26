@@ -1,5 +1,5 @@
 <template>
-    <section class="test">
+    <section>
         <div class="line p-1 m-0"></div>
         <nav class="navbar navbar-expand-lg">
             <div class="container">
@@ -29,21 +29,24 @@
                         <RouterLink to="/contact" tag="a" class="nav-link p-0 m-2">contact</RouterLink>
                     </li>
                 </ul>
-                <div class="icons float-start">
+                <div class="icons float-start d-flex justify-content-center align-items-center">
                     <p class="d-inline-block m-0">
-                        <i class="fa-brands fa-facebook-f mx-3"></i>
+                        <i class="fa-brands fa-youtube mx-2"></i>
                     </p>
                     <p class="d-inline-block m-0">
-                        <i class="fa-brands fa-twitter mx-3"></i>
+                        <i class="fa-brands fa-facebook-f mx-2"></i>
+                    </p>
+                    <p class="d-inline-block m-0">
+                        <i class="fa-brands fa-twitter mx-2"></i>
                     </p>
                     <p @click="showSlideNav()" class="d-inline-block m-0">
-                        <i class="fa-solid fa-bars mx-3"></i>
+                        <i class="fa-solid fa-bars mx-2"></i>
                     </p>
                 </div>
             </div>
         </nav>
+        <SideNavmenu class="sideNav m-0" />
     </section>
-    <SideNavmenu class="sideNav" />
     <RouterView />
 </template>
 <script>
