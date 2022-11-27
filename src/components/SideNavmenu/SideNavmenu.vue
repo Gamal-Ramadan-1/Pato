@@ -48,31 +48,58 @@
                 </div>
                 <div class="row g-2 px-3 mt-4">
                     <div class="col-4">
-                        <img src="../../Imgs/photo-gallery-thumb-01.jpg.webp" class="img-fluid">
+                        <div class="img-gallary">
+                            <img src="../../Imgs/photo-gallery-thumb-01.jpg.webp" class="img-fluid">
+                            <div class="layout-img"></div>
+                        </div>
                     </div>
                     <div class="col-4">
-                        <img src="../../Imgs/photo-gallery-thumb-02.jpg.webp" class="img-fluid">
+                        <div class="img-gallary">
+                            <img src="../../Imgs/photo-gallery-thumb-02.jpg.webp" class="img-fluid">
+                            <div class="layout-img"></div>
+                        </div>
                     </div>
                     <div class="col-4">
-                        <img src="../../Imgs/photo-gallery-thumb-03.jpg.webp" class="img-fluid">
+                        <div class="img-gallary">
+                            <img src="../../Imgs/photo-gallery-thumb-03.jpg.webp" class="img-fluid">
+                            <div class="layout-img"></div>
+                        </div>
                     </div>
                     <div class="col-4">
-                        <img src="../../Imgs/photo-gallery-thumb-04.jpg.webp" class="img-fluid">
+                        <div class="img-gallary">
+                            <img src="../../Imgs/photo-gallery-thumb-04.jpg.webp" class="img-fluid">
+                            <div class="layout-img"></div>
+                        </div>
                     </div>
                     <div class="col-4">
-                        <img src="../../Imgs/photo-gallery-thumb-05.jpg.webp" class="img-fluid">
+                        <div class="img-gallary">
+                            <img src="../../Imgs/photo-gallery-thumb-05.jpg.webp" class="img-fluid">
+                            <div class="layout-img"></div>
+                        </div>
                     </div>
                     <div class="col-4">
-                        <img src="../../Imgs/photo-gallery-thumb-06.jpg.webp" class="img-fluid">
+                        <div class="img-gallary">
+                            <img src="../../Imgs/photo-gallery-thumb-06.jpg.webp" class="img-fluid">
+                            <div class="layout-img"></div>
+                        </div>
                     </div>
                     <div class="col-4">
-                        <img src="../../Imgs/photo-gallery-thumb-07.jpg.webp" class="img-fluid">
+                        <div class="img-gallary">
+                            <img src="../../Imgs/photo-gallery-thumb-07.jpg.webp" class="img-fluid">
+                            <div class="layout-img"></div>
+                        </div>
                     </div>
                     <div class="col-4">
-                        <img src="../../Imgs/photo-gallery-thumb-08.jpg.webp" class="img-fluid">
+                        <div class="img-gallary">
+                            <img src="../../Imgs/photo-gallery-thumb-08.jpg.webp" class="img-fluid">
+                            <div class="layout-img"></div>
+                        </div>
                     </div>
                     <div class="col-4">
-                        <img src="../../Imgs/photo-gallery-thumb-09.jpg.webp" class="img-fluid">
+                        <div class="img-gallary">
+                            <img src="../../Imgs/photo-gallery-thumb-09.jpg.webp" class="img-fluid">
+                            <div class="layout-img"></div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -107,6 +134,10 @@ a {
         cursor: pointer;
     }
 
+    .close:hover {
+        color: $Main-Color !important;
+    }
+
 
     .side-nav-menu {
         background-color: white;
@@ -123,17 +154,23 @@ a {
             color: white;
             transition: all .3s ease-in-out;
             font-size: 15px;
+
+            a:hover {
+                color: white !important;
+            }
         }
 
         .btn:hover {
             background-color: $Main-Color;
             transition: all .3s ease-in-out;
-            color: white;
+            color: white !important;
         }
+
+
     }
 
     .nav-link:hover {
-        color: $Main-Color;
+        color: $Main-Color !important;
     }
 
     .layout {
@@ -144,6 +181,31 @@ a {
         z-index: 999;
         top: 0px;
         opacity: .5;
+        cursor: pointer;
+    }
+}
+
+.img-gallary {
+    position: relative;
+
+    .layout-img {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background-color: $Main-Color;
+        z-index: 2;
+        opacity: 0;
+        top: 0px;
+        transition: all .4s ease-in-out
+    }
+}
+
+.img-gallary:hover {
+    .layout-img {
+        opacity: .7;
+        top: 0px;
+        left: 0px;
+        transition: all .4s ease-in-out;
         cursor: pointer;
     }
 }

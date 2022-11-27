@@ -173,6 +173,10 @@ a {
     color: $Main-Color;
 }
 
+a:hover{
+    color: $Main-Color;
+}
+
 a,
 p {
     font-size: 13px;
@@ -230,6 +234,17 @@ footer {
 .copyright {
     background-color: $Copyright-Color;
     padding: 26px 0px !important;
+
+    i,
+    svg {
+        transition: all .3s ease-in-out;
+    }
+
+    i:hover,
+    svg:hover {
+        color: $Main-Color;
+        transition: all .3s ease-in-out;
+    }
 }
 
 .my-name {
@@ -244,7 +259,6 @@ footer {
     a:hover {
         color: $Main-Color !important;
         transition: all .3s ease-in-out;
-
     }
 }
 </style>
