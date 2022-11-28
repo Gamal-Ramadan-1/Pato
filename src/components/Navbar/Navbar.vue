@@ -143,10 +143,13 @@ $(document).ready(function () {
     .nav-link {
         color: white;
         font-weight: 200;
+        transition: all .3s ease-in-out;
     }
 
     .nav-link:hover {
         color: $Main-Color;
+        transition: all .3s ease-in-out;
+
     }
 
     .icons {

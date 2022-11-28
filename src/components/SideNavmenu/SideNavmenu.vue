@@ -169,8 +169,14 @@ a {
 
     }
 
+    .nav-link {
+        transition: all .3s ease-in-out;
+
+    }
+
     .nav-link:hover {
         color: $Main-Color !important;
+        transition: all .3s ease-in-out;
     }
 
     .layout {
