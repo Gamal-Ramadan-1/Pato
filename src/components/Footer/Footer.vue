@@ -151,7 +151,7 @@
                         <i class="fa-brands fa-twitter"></i>
                     </a>
                 </div>
-                <div class="col-6 text-light text-center my-name">@ 2017 Gamal Ramadan . <a href="#" class="my-name">
+                <div class="col-6 text-light text-center my-name">@ 2022 Gamal Ramadan . <a href="#" class="my-name">
                         Get The
                         Theme</a>
                 </div>

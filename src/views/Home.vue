@@ -1,8 +1,12 @@
 <template>
+    <SliderHome />
 </template>
 <script>
+import SliderHome from '../components/Sliders/Slider-Home.vue';
+
 export default {
-    name: 'Menu'
+    name: "Menu",
+    components: { SliderHome }
 }
 </script>
 <style lang="scss" scoped>

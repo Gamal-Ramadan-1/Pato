@@ -46,7 +46,7 @@
             </div>
         </nav>
     </section>
-    <section class="nav-2" v-show="scY > 400">
+    <section class="nav-2" v-show="scY > 340">
         <div class="line p-1 m-0"></div>
         <nav class="navbar navbar-expand-lg py-3">
             <div class="container">
@@ -129,9 +129,11 @@ $(document).ready(function () {
 @import '@/Scss/Main.scss';
 
 .nav-1 {
-    position: relative;
+    position: absolute;
     font-family: Montserrat;
-    background-color: transparent;
+    background: linear-gradient(rgba(0, 0, 0, 0.6), transparent);
+    z-index: 1;
+    width: 100%;
 
     .line {
         background-color: $Main-Color;
