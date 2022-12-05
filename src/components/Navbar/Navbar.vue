@@ -1,110 +1,115 @@
 <template>
-    <section class="nav-1" v-show="scY < 250">
-        <div class="line p-1 m-0"></div>
-        <div class="container">
-            <div class="row p-3 justify-content-center align-items-center">
-                <div class="col p-0">
-                    <a href="#">
-                        <img src="@/Imgs/logo.png.webp">
-                    </a>
-                </div>
-                <div class="col d-lg-inline-block d-none p-0">
-                    <ul class="m-0 p-0">
-                        <li class="text-uppercase">
-                            <RouterLink to="/" tag="a" class="p-0 ms-4">Home</RouterLink>
-                        </li>
-                        <li class="text-uppercase">
-                            <RouterLink to="/menu" tag="a" class="p-0 ms-4">menu</RouterLink>
-                        </li>
-                        <li class="text-uppercase">
-                            <RouterLink to="/reservation" tag="a" class="p-0 ms-4">reservation</RouterLink>
-                        </li>
-                        <li class="text-uppercase">
-                            <RouterLink to="/gallary" tag="a" class="p-0 ms-4">gallary</RouterLink>
-                        </li>
-                        <li class="text-uppercase">
-                            <RouterLink to="/about" tag="a" class="p-0 ms-4">about</RouterLink>
-                        </li>
-                        <li class="text-uppercase">
-                            <RouterLink to="/blog" tag="a" class="p-0 ms-4">blog</RouterLink>
-                        </li>
-                        <li class="text-uppercase">
-                            <RouterLink to="/contact" tag="a" class="p-0 ms-4">contact</RouterLink>
-                        </li>
-                    </ul>
-                </div>
-                <div class="col p-0">
-                    <div class="icons float-end">
-                        <p class="d-inline-block m-0">
-                            <i class="fa-brands fa-youtube mx-2"></i>
-                        </p>
-                        <p class="d-inline-block m-0">
-                            <i class="fa-brands fa-facebook-f mx-2"></i>
-                        </p>
-                        <p class="d-inline-block m-0">
-                            <i class="fa-brands fa-twitter mx-2"></i>
-                        </p>
-                        <p @click="showSlideNav()" class="d-inline-block m-0">
-                            <i class="fa-solid fa-bars mx-2"></i>
-                        </p>
+    <Transition>
+        <section class="nav-1" v-show="(scY < 1)">
+            <div class="line p-1 m-0"></div>
+            <div class="container">
+                <div class="row p-3 justify-content-center align-items-center">
+                    <div class="col p-0">
+                        <a href="#">
+                            <img src="@/Imgs/logo.png.webp">
+                        </a>
+                    </div>
+                    <div class="col d-lg-inline-block d-none p-0">
+                        <ul class="m-0 p-0">
+                            <li class="text-uppercase">
+                                <RouterLink to="/" tag="a" class="p-0 ms-4">Home</RouterLink>
+                            </li>
+                            <li class="text-uppercase">
+                                <RouterLink to="/menu" tag="a" class="p-0 ms-4">menu</RouterLink>
+                            </li>
+                            <li class="text-uppercase">
+                                <RouterLink to="/reservation" tag="a" class="p-0 ms-4">reservation</RouterLink>
+                            </li>
+                            <li class="text-uppercase">
+                                <RouterLink to="/gallary" tag="a" class="p-0 ms-4">gallary</RouterLink>
+                            </li>
+                            <li class="text-uppercase">
+                                <RouterLink to="/about" tag="a" class="p-0 ms-4">about</RouterLink>
+                            </li>
+                            <li class="text-uppercase">
+                                <RouterLink to="/blog" tag="a" class="p-0 ms-4">blog</RouterLink>
+                            </li>
+                            <li class="text-uppercase">
+                                <RouterLink to="/contact" tag="a" class="p-0 ms-4">contact</RouterLink>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col p-0">
+                        <div class="icons float-end">
+                            <p class="d-inline-block m-0">
+                                <i class="fa-brands fa-youtube mx-2"></i>
+                            </p>
+                            <p class="d-inline-block m-0">
+                                <i class="fa-brands fa-facebook-f mx-2"></i>
+                            </p>
+                            <p class="d-inline-block m-0">
+                                <i class="fa-brands fa-twitter mx-2"></i>
+                            </p>
+                            <p @click="showSlideNav()" class="d-inline-block m-0">
+                                <i class="fa-solid fa-bars mx-2"></i>
+                            </p>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
-    <section class="nav-2" v-show="scY > 340">
-        <div class="line p-1 m-0"></div>
-        <div class="container">
-            <div class="row p-3 justify-content-center align-items-center">
-                <div class="col p-0">
-                    <a href="#">
-                        <img src="../../Imgs/logo2.png.webp">
-                    </a>
-                </div>
-                <div class="col d-lg-inline-block d-none p-0">
-                    <ul class="m-0 p-0">
-                        <li class="text-uppercase">
-                            <RouterLink to="/" tag="a" class="p-0 ms-4">Home</RouterLink>
-                        </li>
-                        <li class="text-uppercase">
-                            <RouterLink to="/menu" tag="a" class="p-0 ms-4">menu</RouterLink>
-                        </li>
-                        <li class="text-uppercase">
-                            <RouterLink to="/reservation" tag="a" class="p-0 ms-4">reservation</RouterLink>
-                        </li>
-                        <li class="text-uppercase">
-                            <RouterLink to="/gallary" tag="a" class="p-0 ms-4">gallary</RouterLink>
-                        </li>
-                        <li class="text-uppercase">
-                            <RouterLink to="/about" tag="a" class="p-0 ms-4">about</RouterLink>
-                        </li>
-                        <li class="text-uppercase">
-                            <RouterLink to="/blog" tag="a" class="p-0 ms-4">blog</RouterLink>
-                        </li>
-                        <li class="text-uppercase">
-                            <RouterLink to="/contact" tag="a" class="p-0 ms-4">contact</RouterLink>
-                        </li>
-                    </ul>
-                </div>
-                <div class="col p-0">
-                    <div class="icons float-end">
-                        <p class="d-inline-block m-0">
-                            <i class="fa-brands fa-youtube mx-2"></i>
-                        </p>
-                        <p class="d-inline-block m-0">
-                            <i class="fa-brands fa-facebook-f mx-2"></i>
-                        </p>
-                        <p class="d-inline-block m-0">
-                            <i class="fa-brands fa-twitter mx-2"></i>
-                        </p>
-                        <p @click="showSlideNav()" class="d-inline-block m-0">
-                            <i class="fa-solid fa-bars mx-2"></i>
-                        </p>
+        </section>
+    </Transition>
+    <Transition>
+
+        <section class="nav-2" v-show="(scY > 1)">
+            <div class="line p-1 m-0"></div>
+            <div class="container">
+                <div class="row p-3 justify-content-center align-items-center">
+                    <div class="col p-0">
+                        <a href="#">
+                            <img src="../../Imgs/logo2.png.webp">
+                        </a>
+                    </div>
+                    <div class="col d-lg-inline-block d-none p-0">
+                        <ul class="m-0 p-0">
+                            <li class="text-uppercase">
+                                <RouterLink to="/" tag="a" class="p-0 ms-4">Home</RouterLink>
+                            </li>
+                            <li class="text-uppercase">
+                                <RouterLink to="/menu" tag="a" class="p-0 ms-4">menu</RouterLink>
+                            </li>
+                            <li class="text-uppercase">
+                                <RouterLink to="/reservation" tag="a" class="p-0 ms-4">reservation</RouterLink>
+                            </li>
+                            <li class="text-uppercase">
+                                <RouterLink to="/gallary" tag="a" class="p-0 ms-4">gallary</RouterLink>
+                            </li>
+                            <li class="text-uppercase">
+                                <RouterLink to="/about" tag="a" class="p-0 ms-4">about</RouterLink>
+                            </li>
+                            <li class="text-uppercase">
+                                <RouterLink to="/blog" tag="a" class="p-0 ms-4">blog</RouterLink>
+                            </li>
+                            <li class="text-uppercase">
+                                <RouterLink to="/contact" tag="a" class="p-0 ms-4">contact</RouterLink>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col p-0">
+                        <div class="icons float-end">
+                            <p class="d-inline-block m-0">
+                                <i class="fa-brands fa-youtube mx-2"></i>
+                            </p>
+                            <p class="d-inline-block m-0">
+                                <i class="fa-brands fa-facebook-f mx-2"></i>
+                            </p>
+                            <p class="d-inline-block m-0">
+                                <i class="fa-brands fa-twitter mx-2"></i>
+                            </p>
+                            <p @click="showSlideNav()" class="d-inline-block m-0">
+                                <i class="fa-solid fa-bars mx-2"></i>
+                            </p>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
+    </Transition>
     <SideNavmenu class="sideNav m-0" />
     <RouterView />
 </template>
@@ -254,5 +259,15 @@ $(document).ready(function () {
             transition: all .3s ease-in-out;
         }
     }
+}
+
+.v-enter-active,
+.v-leave-active {
+    transition: opacity 0.5s ease;
+}
+
+.v-enter-from,
+.v-leave-to {
+    opacity: 0;
 }
 </style>
