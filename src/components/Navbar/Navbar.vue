@@ -1,6 +1,6 @@
 <template>
     <Transition>
-        <section class="nav-1" v-show="(scY < 1)">
+        <section class="nav-1" v-show="(scY < 50)">
             <div class="line p-1 m-0"></div>
             <div class="container">
                 <div class="row p-3 justify-content-center align-items-center">
@@ -56,7 +56,7 @@
     </Transition>
     <Transition>
 
-        <section class="nav-2" v-show="(scY > 1)">
+        <section class="nav-2" v-show="(scY > 50)">
             <div class="line p-1 m-0"></div>
             <div class="container">
                 <div class="row p-3 justify-content-center align-items-center">
