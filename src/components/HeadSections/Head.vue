@@ -2,14 +2,14 @@
     <div class="row py-3">
         <div class="col-12 text-center">
             <p class="text-capitalize">{{ subTitle }}</p>
-            <h1 class="text-uppercase">{{ Title }}</h1>
+            <h1 :class="titleColor + ' text-uppercase'">{{ Title }}</h1>
         </div>
     </div>
 </template>
 <script>
 export default {
     name: 'Head',
-    props: { subTitle: String, Title: String }
+    props: { subTitle: String, Title: String, titleColor: String }
 }
 </script>
 <style lang="scss" scoped>
