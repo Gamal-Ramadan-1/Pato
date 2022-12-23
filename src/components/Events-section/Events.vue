@@ -108,7 +108,6 @@ export default {
 @import '../../Scss/Main.scss';
 
 section {
-    height: 120vh;
     position: relative;
     z-index: 0;
     width: 100%;
